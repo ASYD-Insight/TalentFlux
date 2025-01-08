@@ -38,6 +38,37 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+/* Example Global CSS for Responsiveness */
+@media (max-width: 768px) {
+  .input-box {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* For screens larger than 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduce font size for smaller screens */
+  }
+
+  .app-container {
+    padding-top: 80px; /* Ensure top padding for header */
+  }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px; /* Reduce font size further for very small screens */
+  }
+
+  .app-container {
+    padding-top: 70px; /* Ensure header does not cover content */
+  }
+}
 
 button {
   border-radius: 8px;
